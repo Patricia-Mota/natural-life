@@ -567,3 +567,75 @@ header {
   padding: 10px 20px;
   border-left: 5px solid #999;
 }
+
+/* Estilos de la página Categories */
+/* Hero Categoriest*/
+.hero-categories {
+  background-image: url("./assets/img/categories-hero-img.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 75vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+#categories-heading {
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+/* Categories Section */
+.categories-cards-container {
+  margin: 7rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2.5rem;
+}
+
+.categories-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.categories-card-text-wrp {
+  padding: 2rem;
+}
+
+.categories-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.categories-card p {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.categories-card .btn {
+  display: inline-block;
+  background-color: #0a0f2f;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+.categories-card .btn:hover {
+  background-color: #5e99e0;
+  cursor: pointer;
+  transition: all ease 300ms;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+  .categories-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
